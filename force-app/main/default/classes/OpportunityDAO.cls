@@ -1,8 +1,10 @@
 public with sharing class OpportunityDAO {
 
+    //TODO: melhorar a forma de tratar erros e sucesso - provável com o obj de log
+
     public static void insertOpp(List<Opportunity> oppTpInsert) {
 
-        Database.SaveResult[] saveResults = Database.insert(oppTpInsert, false);
+        Database.SaveResult[] saveResults = Database.insert(oppTpInsert, false, AccessLevel.USER_MODE);
 
         List<Id> successfulRecords = new List <Id>();
         List<Database.Error> failedRecordsErrors = new List<Database.Error>();

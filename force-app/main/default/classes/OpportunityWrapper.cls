@@ -1,6 +1,6 @@
 public with sharing class OpportunityWrapper {
    
-    public static void getOppToInsert(List<OpportunityRESTMapper> mapperList){
+    public static void transformRecords(List<OpportunityRESTMapper> mapperList){
         
         List<Opportunity> oppTransformList = new List<Opportunity>();
 

@@ -1,6 +1,5 @@
 public with sharing class InsertOpportunityFactory {
 
-    
     public static Opportunity getOpp(Opportunity opp){
 
         Opportunity oppToReturn;
